@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>张晨宇 - AI 产品经理个人主页与实战作品集 | InstaStock 系统</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fff7ed',
+              100: '#ffedd5',
+              500: '#f97316',
+              600: '#ea580c'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#fafbfc] text-slate-800 font-sans antialiased min-h-screen">
+
+  <!-- 顶部导航栏 -->
+  <header class="border-b border-slate-200 bg-white/95 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-7 h-7 rounded-lg bg-orange-500 flex items-center justify-center font-bold text-white text-sm shadow-sm">
+          ⚡
+        </div>
+        <div>
+          <span class="font-bold text-base text-slate-900 tracking-tight">张晨宇 · 个人主页</span>
+          <span class="text-xs text-slate-500 ml-2 hidden sm:inline-block border border-slate-200 rounded px-1.5 py-0.5 bg-slate-50">AI 产品经理</span>
+        </div>
+      </div>
+
+      <nav class="flex items-center space-x-2 sm:space-x-4 text-xs font-medium text-slate-600">
+        <a href="#resume" class="hover:text-orange-600 transition-colors">
+          <span class="hidden sm:inline">个人简历与能力</span>
+          <span class="sm:hidden font-semibold">简历</span>
+        </a>
+        <a href="#project-intro" class="hover:text-orange-600 transition-colors">
+          <span class="hidden sm:inline">影石实战项目</span>
+          <span class="sm:hidden">项目</span>
+        </a>
+        <a href="#simulator" class="hover:text-orange-600 transition-colors text-orange-600 font-semibold">
+          <span class="hidden sm:inline">在线交互演示</span>
+          <span class="sm:hidden">演示</span>
+        </a>
+        <a href="#specs" class="hover:text-orange-600 transition-colors hidden md:inline-block">PRD设计规范</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🌟 第一栏重磅位置：张晨宇 个人完整浓缩简历与核心能力矩阵 -->
+  <section id="resume" class="max-w-5xl mx-auto px-4 pt-8 pb-4">
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-6">
+      
+      <!-- 简历头部：姓名、教育背景与直接联系方式 -->
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-5">
+        <div class="flex items-start gap-4">
+          <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-orange-500 to-amber-400 flex items-center justify-center text-white font-extrabold text-2xl shadow-md shadow-orange-500/20 shrink-0">
+            宇
+          </div>
+          <div class="space-y-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <h1 class="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight">张晨宇</h1>
+              <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 px-2 py-0.5 rounded-full text-xs font-medium">大三在读 (2028届毕业)</span>
+            </div>
+            <p class="text-xs text-slate-600 font-medium">
+              熟练掌握计算机科学与编程开发能力 · 深入一线消费电子零售沉淀真实商业体感 · 兼具独立 0-1 AI 落地全栈产品思维
+            </p>
+          </div>
+        </div>
+
+        <!-- 真实直接联系方式 -->
+        <div class="flex flex-wrap md:flex-col gap-2 text-xs text-slate-700 shrink-0 bg-slate-50 p-3 rounded-xl border border-slate-200/80">
+          <a href="tel:19350836683" class="flex items-center gap-1.5 hover:text-orange-600 transition-colors">
+            <span class="text-slate-400">📱 电话:</span>
+            <span class="font-mono font-bold text-slate-900">193-5083-6683</span>
+          </a>
+          <a href="mailto:jjke5982@gmail.com" class="flex items-center gap-1.5 hover:text-orange-600 transition-colors">
+            <span class="text-slate-400">📮 邮箱:</span>
+            <span class="font-mono font-medium text-slate-800">jjke5982@gmail.com</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 核心实践背景：影石一线销售与业务沉淀 -->
+      <div class="bg-slate-50/80 p-4 rounded-xl border border-slate-100 space-y-1.5 text-xs">
+        <div class="font-bold text-slate-900 text-xs flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
+          核心业务实践：智能数码与消费电子一线零售沉淀
+        </div>
+        <p class="text-slate-600 text-[11px] leading-relaxed">
+          深入一线专柜接待数百位真实数码买家，深谙全景/运动相机等数码硬件用户真实诉求（画质、配件赠品、折扣让利）；在实践中敏锐发现门店进销存软件年费高昂（1500元/年）且微信口语报单易错账的问题，凭借产品自驱力独立开发了下方展示的进销存辅助系统，实现 93% 的对账提效与店员月度销售额自动核算。
+        </p>
+      </div>
+
+      <!-- 🌟 核心亮点：张晨宇 6 大专业能力矩阵 (结构化卡片排布) -->
+      <div>
+        <div class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3 flex items-center justify-between">
+          <span class="flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+            专业产品能力与技术底盘 (Core Competencies)
+          </span>
+          <span class="text-[10px] text-slate-400 font-normal">基于真实项目与自研系统沉淀</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
+          
+          <!-- 能力 1 -->
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-sm space-y-1.5">
+            <div class="font-bold text-slate-900 flex items-center gap-1.5 text-[11px]">
+              <span class="text-orange-500">🤖</span> AI Agent 与大模型机制
+            </div>
+            <p class="text-slate-600 text-[11px] leading-relaxed">
+              熟悉 LLM、Agent、RAG、Tool Use、MCP、Memory 与 Agent Loop 核心机制。能从产品视角拆解任务流程、工具调用、异常处理及人工确认节点。
+            </p>
+          </div>
+
+          <!-- 能力 2 -->
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-sm space-y-1.5">
+            <div class="font-bold text-slate-900 flex items-center gap-1.5 text-[11px]">
+              <span class="text-blue-500">💻</span> AI Coding 与端到端落地
+            </div>
+            <p class="text-slate-600 text-[11px] leading-relaxed">
+              熟练使用 AI Coding 工具，独立跑通从“需求拆解、方案设计、代码实现、调试到功能迭代”全闭环；已独立交付销货清单自动处理系统。
+            </p>
+          </div>
+
+          <!-- 能力 3 -->
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-sm space-y-1.5">
+            <div class="font-bold text-slate-900 flex items-center gap-1.5 text-[11px]">
+              <span class="text-emerald-500">⚖️</span> 技术方案与边界判断
+            </div>
+            <p class="text-slate-600 text-[11px] leading-relaxed">
+              能结合业务精准判断 LLM、Agent、RAG 与 Workflow 适用场景，聚焦准确率、成本与稳定性，在规则、模型与人工确认间合理取舍。
+            </p>
+          </div>
+
+          <!-- 能力 4 -->
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-sm space-y-1.5">
+            <div class="font-bold text-slate-900 flex items-center gap-1.5 text-[11px]">
+              <span class="text-purple-500">🎯</span> 业务问题拆解与容错纠偏
+            </div>
+            <p class="text-slate-600 text-[11px] leading-relaxed">
+              能从真实业务场景发现真问题。针对错别字、简称与非结构化表达，设计实体归一、字典映射与异常拦截流程，并根据反馈持续优化。
+            </p>
+          </div>
+
+          <!-- 能力 5 -->
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-sm space-y-1.5">
+            <div class="font-bold text-slate-900 flex items-center gap-1.5 text-[11px]">
+              <span class="text-amber-500">🏗️</span> 计算机科学与系统理解
+            </div>
+            <p class="text-slate-600 text-[11px] leading-relaxed">
+              具备良好编程与计算机科学底座，理解 API、数据库事务、前后端交互及 AI 系统架构，不局限于 PRD，能与研发深入推演技术可行性。
+            </p>
+          </div>
+
+          <!-- 能力 6 -->
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-sm space-y-1.5">
+            <div class="font-bold text-slate-900 flex items-center gap-1.5 text-[11px]">
+              <span class="text-rose-500">⚡</span> 敏捷原型与 MVP 验证
+            </div>
+            <p class="text-slate-600 text-[11px] leading-relaxed">
+              具备“发现问题 ➔ 设计方案 ➔ 快速跑出可运行 Demo ➔ 验证效果 ➔ 持续迭代”的完整产品思维，善于用最小成本验证业务假设。
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 项目介绍区 -->
+  <section id="project-intro" class="max-w-5xl mx-auto px-4 pt-6 pb-4">
+    <div class="space-y-3">
+      <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-orange-50 border border-orange-200 text-orange-700 text-xs font-medium">
+        <span class="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
+        代表实战案例：自研进销存辅助系统
+      </div>
+      <h2 class="text-xl md:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+        影石门店进销存与分货辅助系统 (InstaStock)
+      </h2>
+      <p class="text-slate-600 text-xs md:text-sm leading-relaxed max-w-3xl">
+        针对线下多门店协同中“录单繁琐、实际成交价与官方标价对账混乱、月度店员销售额统计耗时耗力”等痛点，自研设计的进销存辅助工具。系统支持<strong>实收成交价自动登记、跨店平调记录，并能一键按月度汇总店员个人销售业绩与提成</strong>。
+      </p>
+    </div>
+
+    <!-- 解决的 3 个实际问题 (真实数据与成本) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 mt-5">
+      <div class="bg-white border border-slate-200 p-4 rounded-xl shadow-sm">
+        <div class="text-xs font-semibold text-slate-500 mb-1">日常对账提效与准确度</div>
+        <div class="text-xl font-bold text-slate-900">45分钟 ➔ 3分钟</div>
+        <div class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+          自动解析口语报单文字，智能提取<strong>实收销售价格</strong>与责任员工署名，通过影石品名字典纠偏，确保实收金额与微信/POS机账目分毫不差。
+        </div>
+      </div>
+      <div class="bg-white border border-slate-200 p-4 rounded-xl shadow-sm">
+        <div class="text-xs font-semibold text-slate-500 mb-1">固定软件成本节省</div>
+        <div class="text-xl font-bold text-emerald-600">节省 1,500元 / 年</div>
+        <div class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+          替代昂贵的商业进销存财务软件年费订阅，免去小门店多账号续费开支，大幅提升每日记账效率与数据稳定性。
+        </div>
+      </div>
+      <div class="bg-white border border-slate-200 p-4 rounded-xl shadow-sm">
+        <div class="text-xs font-semibold text-slate-500 mb-1">月度业绩与提成自动核算</div>
+        <div class="text-xl font-bold text-orange-600">一键按月汇总</div>
+        <div class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+          支持一键生成《月度店员总销售额汇总表》，自动按员工（甲/乙/丙/丁）统计出货台数、总实收金额与提成，算绩效零争议。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 业务功能全景：进、销、调、盘、结 -->
+  <section class="max-w-5xl mx-auto px-4 py-2">
+    <div class="bg-white border border-slate-200 p-4 rounded-xl shadow-sm">
+      <div class="text-xs font-bold text-slate-800 mb-2">系统完整业务闭环链路 (含实收成交价登记与月度汇总)</div>
+      <div class="grid grid-cols-2 sm:grid-cols-5 gap-2 text-xs">
+        <div class="p-2.5 rounded bg-slate-50 border border-slate-100 text-center">
+          <div class="font-bold text-slate-700">1. 进货入库</div>
+          <div class="text-[11px] text-slate-500 mt-0.5">总仓到货 / 序列号核验入库</div>
+        </div>
+        <div class="p-2.5 rounded bg-orange-50 border border-orange-200 text-center">
+          <div class="font-bold text-orange-700">2. 成交价销货</div>
+          <div class="text-[11px] text-orange-600 mt-0.5">登记实收金额与经办人署名</div>
+        </div>
+        <div class="p-2.5 rounded bg-slate-50 border border-slate-100 text-center">
+          <div class="font-bold text-slate-700">3. 跨店调拨</div>
+          <div class="text-[11px] text-slate-500 mt-0.5">A店 ⇄ B店 货品平调在途确认</div>
+        </div>
+        <div class="p-2.5 rounded bg-slate-50 border border-slate-100 text-center">
+          <div class="font-bold text-slate-700">4. 账实盘点</div>
+          <div class="text-[11px] text-slate-500 mt-0.5">实物序列号与账面逐项比对</div>
+        </div>
+        <div class="col-span-2 sm:col-span-1 p-2.5 rounded bg-emerald-50 border border-emerald-200 text-center">
+          <div class="font-bold text-emerald-800">5. 月度业绩总汇</div>
+          <div class="text-[11px] text-emerald-600 mt-0.5">按员工汇总总销售额与提成</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🌟 在线交互模拟器：支持登记销售成交价与生成月度销售总额 -->
+  <section id="simulator" class="max-w-5xl mx-auto px-4 py-4">
+    <div class="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
+      
+      <!-- 模拟器头部工具栏 -->
+      <div class="bg-slate-50 px-5 py-3 border-b border-slate-200 flex flex-wrap items-center justify-between gap-2">
+        <div class="flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-orange-500"></span>
+          <span class="text-xs font-bold text-slate-800">在线交互沙箱：成交价登记、调拨与月度销售汇总</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="generateDailySummary()" class="text-xs bg-white hover:bg-slate-50 text-slate-700 px-2.5 py-1 rounded border border-slate-200 transition font-medium">
+            <span>📅 今日日结单</span>
+          </button>
+          <button onclick="generateMonthlySummary()" class="text-xs bg-orange-500 hover:bg-orange-600 text-white px-2.5 py-1 rounded shadow-sm transition font-medium flex items-center gap-1">
+            <span>📊 <span class="hidden sm:inline">生成店员</span>月度销售总额<span class="hidden sm:inline">报表</span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-0 divide-y lg:divide-y-0 lg:divide-x divide-slate-200">
+        
+        <!-- 左侧：输入与场景 (5列) -->
+        <div class="lg:col-span-5 p-5 space-y-4">
+          <div>
+            <div class="flex items-center justify-between mb-1.5">
+              <label class="block text-xs font-bold text-slate-700">
+                销售口语报单（含经手人、实际成交单价）：
+              </label>
+              <span class="text-[10px] text-orange-600 bg-orange-50 px-1 rounded">支持实收价格登记</span>
+            </div>
+            <textarea id="salesInput" rows="3" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs text-slate-800 focus:outline-none focus:border-orange-500 focus:bg-white transition-colors" placeholder="在此输入销售口语报单...">【员工甲/A店】：出货2台X4，给老客户优惠每台实收3399元，送1个114cm自拍杆；另外调拨1台Ace Pro 2去B店。</textarea>
+          </div>
+
+          <div>
+            <div class="text-xs text-slate-500 mb-1.5">快捷点击填入不同员工报单测试：</div>
+            <div class="flex flex-col gap-1.5">
+              <button onclick="fillPreset(1)" class="text-left text-xs bg-slate-50 hover:bg-slate-100 text-slate-700 p-2 rounded border border-slate-200 transition">
+                <b>场景一（折扣成交价登记）</b>：员工甲售出 2台 X4，<b>实收 3399元/台</b>，赠送自拍杆
+              </button>
+              <button onclick="fillPreset(2)" class="text-left text-xs bg-slate-50 hover:bg-slate-100 text-slate-700 p-2 rounded border border-slate-200 transition">
+                <b>场景二（原价出货+别称）</b>：员工乙在B店<b>原价 2698元</b>售出"爱斯普罗2"，调拨GO 3S
+              </button>
+              <button onclick="fillPreset(3)" class="text-left text-xs bg-slate-50 hover:bg-slate-100 text-slate-700 p-2 rounded border border-slate-200 transition">
+                <b>场景三（进货入库）</b>：员工丙在A店核验总仓配货：5台 Flow Pro 进货入库
+              </button>
+            </div>
+          </div>
+
+          <button id="btnProcess" onclick="processOrder()" class="w-full py-2.5 px-4 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-lg text-xs shadow-sm transition-colors flex items-center justify-center gap-1.5">
+            <span>记录成交价并同步扣减库存</span>
+          </button>
+        </div>
+
+        <!-- 右侧：AI 思考日志、生成的单据与实时数据库 (7列) -->
+        <div class="lg:col-span-7 p-5 space-y-4 bg-slate-50/40">
+          
+          <!-- 处理日志与成交价提取 -->
+          <div class="border border-slate-200 bg-white rounded-lg p-3">
+            <div class="flex items-center justify-between mb-1 text-xs text-slate-500">
+              <span class="font-semibold text-slate-700 flex items-center gap-1.5">
+                <span id="thinkingSpinner" class="hidden w-1.5 h-1.5 rounded-full bg-orange-500 animate-ping"></span>
+                自动解析与实收价格核算
+              </span>
+              <span id="executionTime" class="font-mono text-[11px]">准备就绪</span>
+            </div>
+            <div id="thinkingLog" class="text-xs font-mono text-slate-600 bg-slate-50 rounded p-2 space-y-0.5 h-16 overflow-y-auto border border-slate-100">
+              <div class="text-slate-400">> 等待输入，点击左侧按钮体验...</div>
+            </div>
+          </div>
+
+          <!-- 解析生成的单据明细 -->
+          <div>
+            <div class="text-xs font-semibold text-slate-700 mb-1.5 flex items-center justify-between">
+              <span>识别生成的出库销售凭据 (含成交价)</span>
+              <span id="badgeStatus" class="hidden text-[10px] px-1.5 py-0.5 rounded font-mono"></span>
+            </div>
+            <div id="outputContainer" class="border border-slate-200 bg-white rounded-lg p-3 min-h-[85px] flex items-center justify-center text-slate-400 text-xs">
+              点击左侧按钮，查看包含实收价格与责任员工的交易凭据
+            </div>
+          </div>
+
+          <!-- 模拟实时库存表 -->
+          <div>
+            <div class="flex items-center justify-between mb-1.5">
+              <div class="text-xs font-semibold text-slate-700">影石最新官方爆款及配件库存表 (含序列号SN与单价)</div>
+              <button onclick="resetInventory()" class="text-xs text-orange-600 hover:underline">重置数据</button>
+            </div>
+            <div class="overflow-x-auto rounded-lg border border-slate-200 bg-white shadow-sm">
+              <table class="w-full text-xs text-left text-slate-700 min-w-[500px] whitespace-nowrap">
+                <thead class="bg-slate-50 text-slate-500 border-b border-slate-200 font-medium">
+                  <tr>
+                    <th class="px-2.5 py-2">商品名称 (型号)</th>
+                    <th class="px-2 py-2">序列号 (SN前缀)</th>
+                    <th class="px-2 py-2">店铺</th>
+                    <th class="px-2 py-2 text-right">官方指导价</th>
+                    <th class="px-2.5 py-2 text-right">在库数量</th>
+                    <th class="px-2.5 py-2">状态</th>
+                  </tr>
+                </thead>
+                <tbody id="inventoryTable" class="divide-y divide-slate-100 font-mono text-[11px]">
+                  <!-- JS 动态渲染 -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 弹窗一：日终销售汇总对账单 -->
+  <div id="dailyModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white border border-slate-200 rounded-2xl max-w-lg w-full p-5 shadow-2xl space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <div>
+          <h3 class="font-bold text-slate-900 text-sm">📅 影石门店日销售与出入库汇总对账单</h3>
+          <p class="text-[11px] text-slate-500">按实收金额汇总 · 包含各员工个人出库明细 · 待负责人审阅</p>
+        </div>
+        <button onclick="closeDailyModal()" class="text-slate-400 hover:text-slate-600 text-lg">✕</button>
+      </div>
+
+      <div class="space-y-3 text-xs">
+        <div class="grid grid-cols-3 gap-2 bg-slate-50 p-2.5 rounded-lg border border-slate-100 text-center">
+          <div>
+            <div class="text-[10px] text-slate-400">今日实收总额</div>
+            <div class="font-bold text-slate-800 text-sm">¥ 9,496</div>
+          </div>
+          <div>
+            <div class="text-[10px] text-slate-400">出库主机台数</div>
+            <div class="font-bold text-slate-800 text-sm">3 台</div>
+          </div>
+          <div>
+            <div class="text-[10px] text-slate-400">让利优惠总额</div>
+            <div class="font-bold text-orange-600 text-sm">¥ 200</div>
+          </div>
+        </div>
+
+        <div class="border border-slate-200 rounded-lg p-2.5 space-y-1.5 bg-white">
+          <div class="font-semibold text-slate-800 text-[11px] flex justify-between">
+            <span>今日员工经手明细 (实收成交金额与出库)：</span>
+            <span class="text-slate-400 font-normal">对齐微信/POS到账</span>
+          </div>
+          <div class="space-y-1 text-[11px]">
+            <div class="flex justify-between items-center p-1.5 rounded bg-slate-50 border border-slate-100">
+              <span><b>员工甲 (A店)</b>：售出 X4 × 2台 (实收3399/台，送自拍杆)</span>
+              <span class="font-mono text-emerald-700 font-semibold">实收 ¥6,798</span>
+            </div>
+            <div class="flex justify-between items-center p-1.5 rounded bg-slate-50 border border-slate-100">
+              <span><b>员工乙 (B店)</b>：售出 Ace Pro 2 × 1台 (按原价2698实收)</span>
+              <span class="font-mono text-emerald-700 font-semibold">实收 ¥2,698</span>
+            </div>
+            <div class="flex justify-between items-center p-1.5 rounded bg-slate-50 border border-slate-100">
+              <span><b>员工丙 (A店)</b>：办理总仓配货 Flow Pro × 5台 (入库验货)</span>
+              <span class="font-mono text-blue-700 font-semibold">进货入库 ¥4,495</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-2.5 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-800 text-[11px] leading-relaxed">
+          ✅ <b>账实核对通过</b>：实收金额总计 ¥9,496，与流水记录一致；出库主机均已扣减对应 SN 序列号，无未登记赠品。
+        </div>
+      </div>
+
+      <div class="flex justify-end gap-2 pt-2 border-t border-slate-100">
+        <button onclick="closeDailyModal()" class="px-3 py-1.5 text-xs text-slate-600 bg-slate-100 hover:bg-slate-200 rounded">关闭</button>
+        <button onclick="alert('已模拟推送给店长及老板微信！'); closeDailyModal();" class="px-3 py-1.5 text-xs text-white bg-orange-500 hover:bg-orange-600 font-medium rounded shadow-sm">一键推送老板微信</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 弹窗二：月度店员总销售额与业绩汇总报表 -->
+  <div id="monthlyModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white border border-slate-200 rounded-2xl max-w-xl w-full p-6 shadow-2xl space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <div>
+          <h3 class="font-bold text-slate-900 text-base">📊 影石门店月度销售总额与店员业绩总结报表</h3>
+          <p class="text-xs text-slate-500">统计周期：2025年08月01日 - 08月31日 · 按店员实际销售额结算提成</p>
+        </div>
+        <button onclick="closeMonthlyModal()" class="text-slate-400 hover:text-slate-600 text-lg">✕</button>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 bg-slate-50 p-3 rounded-xl border border-slate-100 text-center">
+        <div>
+          <div class="text-[11px] text-slate-500">全月总实收金额</div>
+          <div class="font-bold text-slate-900 text-base mt-0.5">¥ 186,420</div>
+        </div>
+        <div>
+          <div class="text-[11px] text-slate-500">总销售台数</div>
+          <div class="font-bold text-slate-900 text-base mt-0.5">64 台</div>
+        </div>
+        <div>
+          <div class="text-[11px] text-slate-500">配件连带率</div>
+          <div class="font-bold text-emerald-600 text-base mt-0.5">1.82 件/单</div>
+        </div>
+        <div>
+          <div class="text-[11px] text-slate-500">提成发放总额</div>
+          <div class="font-bold text-orange-600 text-base mt-0.5">¥ 5,592</div>
+        </div>
+      </div>
+
+      <div class="border border-slate-200 rounded-xl overflow-x-auto bg-white">
+        <table class="w-full text-xs text-left min-w-[500px] whitespace-nowrap">
+          <thead class="bg-slate-50 text-slate-500 border-b border-slate-200 font-medium">
+            <tr>
+              <th class="px-3 py-2">店员姓名</th>
+              <th class="px-3 py-2">常驻门店</th>
+              <th class="px-3 py-2 text-right">出货台数</th>
+              <th class="px-3 py-2 text-right">月度总销售额 (实收)</th>
+              <th class="px-3 py-2 text-right">预估提成 (3%)</th>
+              <th class="px-3 py-2 text-center">完成度</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 font-mono text-slate-700">
+            <tr class="bg-orange-50/30">
+              <td class="px-3 py-2.5 font-bold text-slate-900 flex items-center gap-1.5">
+                <span class="w-4 h-4 rounded-full bg-amber-400 text-slate-900 flex items-center justify-center text-[10px] font-bold">1</span>
+                员工甲
+              </td>
+              <td class="px-3 py-2.5 text-slate-500">A店</td>
+              <td class="px-3 py-2.5 text-right font-bold text-slate-900">26 台</td>
+              <td class="px-3 py-2.5 text-right font-bold text-orange-600">¥ 78,520</td>
+              <td class="px-3 py-2.5 text-right font-bold text-emerald-700">¥ 2,355</td>
+              <td class="px-3 py-2.5 text-center"><span class="bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded text-[10px]">130% 超额</span></td>
+            </tr>
+            <tr>
+              <td class="px-3 py-2.5 font-bold text-slate-900 flex items-center gap-1.5">
+                <span class="w-4 h-4 rounded-full bg-slate-200 text-slate-700 flex items-center justify-center text-[10px] font-bold">2</span>
+                员工乙
+              </td>
+              <td class="px-3 py-2.5 text-slate-500">B店</td>
+              <td class="px-3 py-2.5 text-right font-bold text-slate-900">18 台</td>
+              <td class="px-3 py-2.5 text-right font-bold text-slate-800">¥ 52,410</td>
+              <td class="px-3 py-2.5 text-right font-bold text-emerald-700">¥ 1,572</td>
+              <td class="px-3 py-2.5 text-center"><span class="bg-emerald-50 text-emerald-700 px-1.5 py-0.5 rounded text-[10px]">105% 达标</span></td>
+            </tr>
+            <tr>
+              <td class="px-3 py-2.5 font-bold text-slate-900 flex items-center gap-1.5">
+                <span class="w-4 h-4 rounded-full bg-slate-200 text-slate-700 flex items-center justify-center text-[10px] font-bold">3</span>
+                员工丙
+              </td>
+              <td class="px-3 py-2.5 text-slate-500">A店</td>
+              <td class="px-3 py-2.5 text-right font-bold text-slate-900">12 台</td>
+              <td class="px-3 py-2.5 text-right font-bold text-slate-800">¥ 33,690</td>
+              <td class="px-3 py-2.5 text-right font-bold text-emerald-700">¥ 1,010</td>
+              <td class="px-3 py-2.5 text-center"><span class="bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded text-[10px]">92% 良好</span></td>
+            </tr>
+            <tr>
+              <td class="px-3 py-2.5 font-bold text-slate-900 flex items-center gap-1.5">
+                <span class="w-4 h-4 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-[10px] font-bold">4</span>
+                员工丁
+              </td>
+              <td class="px-3 py-2.5 text-slate-500">B店</td>
+              <td class="px-3 py-2.5 text-right font-bold text-slate-900">8 台</td>
+              <td class="px-3 py-2.5 text-right font-bold text-slate-800">¥ 21,800</td>
+              <td class="px-3 py-2.5 text-right font-bold text-emerald-700">¥ 654</td>
+              <td class="px-3 py-2.5 text-center"><span class="bg-amber-50 text-amber-700 px-1.5 py-0.5 rounded text-[10px]">80% 正常</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="text-[11px] text-slate-500 leading-relaxed bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+        💡 <b>管理复盘价值</b>：系统按单自动沉淀实收金额，店长在月底无需耗费 2 天手工对账，一键即可导出店员真实销售额与提成明细，杜绝错账扯皮。
+      </div>
+
+      <div class="flex justify-end gap-2 pt-2 border-t border-slate-100">
+        <button onclick="closeMonthlyModal()" class="px-3 py-1.5 text-xs text-slate-600 bg-slate-100 hover:bg-slate-200 rounded">关闭</button>
+        <button onclick="alert('已导出月度 Excel 财务汇总表！'); closeMonthlyModal();" class="px-3.5 py-1.5 text-xs text-white bg-orange-500 hover:bg-orange-600 font-medium rounded shadow-sm">导出月度业绩报表 (Excel)</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🌟 深度重构：产品功能设计与数据规范 -->
+  <section id="specs" class="max-w-5xl mx-auto px-4 py-10 border-t border-slate-200">
+    <div class="space-y-8">
+      
+      <!-- 栏目标题与核心设计哲学 -->
+      <div>
+        <div class="inline-flex items-center gap-1.5 text-orange-600 text-xs font-semibold uppercase tracking-wider mb-1">
+          <span>System Architecture & Engineering Design</span>
+        </div>
+        <h2 class="text-xl md:text-2xl font-bold text-slate-900 tracking-tight">产品功能设计与底层逻辑规范</h2>
+        <p class="text-xs text-slate-500 mt-1 max-w-3xl leading-relaxed">
+          深入阐述从非结构化口语输入到数据库原子写入的完整链路设计，解析成交价灵活登记、月度业绩自动汇总与相比传统方案的优越性。
+        </p>
+      </div>
+
+      <!-- 核心板块一：三层漏斗式处理逻辑 -->
+      <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+          <div class="font-bold text-slate-900 text-sm flex items-center gap-2">
+            <span class="w-5 h-5 rounded bg-orange-100 text-orange-600 flex items-center justify-center text-xs">1</span>
+            三层过滤处理管道 (Pipeline Architecture)
+          </div>
+          <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">从口语到原子事务</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
+          <div class="p-3.5 rounded-lg bg-slate-50 border border-slate-200/80 space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-800">第 1 层：实体归一与模糊映射</span>
+              <span class="text-[10px] text-slate-400 font-mono">Pre-processing</span>
+            </div>
+            <p class="text-[11px] text-slate-600 leading-relaxed">
+              <b>设计优化</b>：前置引入影石专有品名字典库，在输入端通过模糊匹配把“爱斯普罗”、“X四”直接标准化，消除大模型幻觉与乱编型号的可能。
+            </p>
+          </div>
+
+          <div class="p-3.5 rounded-lg bg-slate-50 border border-slate-200/80 space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-800">第 2 层：实收价格与责任抽取</span>
+              <span class="text-[10px] text-slate-400 font-mono">Price & Staff Parsing</span>
+            </div>
+            <p class="text-[11px] text-slate-600 leading-relaxed">
+              <b>代码逻辑</b>：智能提取责任销售（员工甲/乙/丙）与<strong>实际成交单价（transacted_price）</strong>。若销售未提及特惠价，则自动沿用官方指导价，计算实收总额与让利差价。
+            </p>
+          </div>
+
+          <div class="p-3.5 rounded-lg bg-slate-50 border border-slate-200/80 space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-800">第 3 层：边界断言与库存事务</span>
+              <span class="text-[10px] text-slate-400 font-mono">Atomic Assert</span>
+            </div>
+            <p class="text-[11px] text-slate-600 leading-relaxed">
+              <b>系统优越性</b>：<strong>读写分离原则</strong>。模型仅负责理解语义，绝不给模型直接修改数据库的权限。数据库写入前强制检查在库数量，不足立即熔断，杜绝“负库存记账”。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 核心板块二：产品设计的核心优越性对比 -->
+      <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm space-y-4">
+        <div class="font-bold text-slate-900 text-sm flex items-center gap-2 border-b border-slate-100 pb-3">
+          <span class="w-5 h-5 rounded bg-orange-100 text-orange-600 flex items-center justify-center text-xs">2</span>
+          核心设计优越性与业务价值对照
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-xs text-left text-slate-700 min-w-[640px]">
+            <thead class="bg-slate-50 text-slate-500 font-medium border-b border-slate-200">
+              <tr>
+                <th class="p-2.5">对比维度</th>
+                <th class="p-2.5">传统进销存商业软件 (如某蝶/某友)</th>
+                <th class="p-2.5">粗糙的套壳 AI 聊天工具</th>
+                <th class="p-2.5 bg-orange-50/60 text-orange-800 font-bold">本系统 (InstaStock 优化方案)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 text-[11px]">
+              <tr>
+                <td class="p-2.5 font-bold text-slate-800">销售价格与折扣录入</td>
+                <td class="p-2.5 text-slate-500">固定价格模板，修改实收折扣需切换多级管理员权限，繁琐导致销售少记漏记</td>
+                <td class="p-2.5 text-slate-500">数字识别无约束，容易把单价与数量混淆，算错销售总额</td>
+                <td class="p-2.5 bg-orange-50/30 text-slate-800 font-semibold">微信发“实收3399”即可自动提取，核算让利金额，账目与收款码分毫不差</td>
+              </tr>
+              <tr>
+                <td class="p-2.5 font-bold text-slate-800">月度店员业绩与提成</td>
+                <td class="p-2.5 text-slate-500">公共账号录入，月底店长需耗费 2 天手工按单统计每个销售业绩，容易扯皮</td>
+                <td class="p-2.5 text-slate-500">无多维聚合能力，无法生成严肃的月度结构化业绩报表</td>
+                <td class="p-2.5 bg-orange-50/30 text-slate-800 font-semibold">一键按月汇总各店员总销售额、出货台数与提成，自动排名，零争议</td>
+              </tr>
+              <tr>
+                <td class="p-2.5 font-bold text-slate-800">资金与软件成本</td>
+                <td class="p-2.5 text-slate-500">按年收取固定账号订阅费，小门店每年刚性支出 1,500 ~ 3,000 元</td>
+                <td class="p-2.5 text-slate-500">长上下文全量拼接，单次调用 Token 膨胀，成本失控</td>
+                <td class="p-2.5 bg-orange-50/30 text-slate-800 font-semibold">单条仅解析 80 Tokens，月均 API 成本不足 1 元，省下 100% 软件年费</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 核心板块三：数据规范与字段定义 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        <!-- JSON 数据契约 -->
+        <div class="bg-white border border-slate-200 p-4 rounded-xl shadow-sm space-y-2">
+          <div class="flex items-center justify-between">
+            <div class="text-xs font-bold text-slate-800">3. 接口数据契约 (包含成交价格定义)</div>
+            <span class="text-[10px] text-slate-400 font-mono">严格字段约束</span>
+          </div>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            结构化 Prompt 强约束输出，提取实收成交价与优惠金额，对齐财务流水：
+          </p>
+          <pre class="bg-slate-50 p-3 rounded-lg text-[11px] font-mono text-slate-700 border border-slate-200 overflow-x-auto leading-relaxed">
+{
+  "order_type": "SALE_AND_TRANSFER",
+  "staff_name": "员工甲",             // 经手人 (责任归属与算提成)
+  "confidence_score": 0.98,
+  "items": [
+    {
+      "action": "OUTBOUND_SALE",      // 动作：出库销售
+      "store": "A店",
+      "product_name": "Insta360 X4",  // 标准品名
+      "official_price": 3499,         // 官方指导价
+      "transacted_price": 3399,       // 实收成交价 (实际入账)
+      "discount_amount": 100,         // 让利差价 (优惠登记)
+      "quantity": 2,                  // 数量
+      "gift": "114cm 隐形自拍杆"       // 附赠配件
+    },
+    {
+      "action": "TRANSFER",          // 跨店调拨平调
+      "from_store": "A店",
+      "to_store": "B店",
+      "product_name": "Insta360 Ace Pro 2",
+      "quantity": 1
+    }
+  ]
+}</pre>
+        </div>
+
+        <!-- 异常流与状态机设计 -->
+        <div class="bg-white border border-slate-200 p-4 rounded-xl shadow-sm space-y-2">
+          <div class="flex items-center justify-between">
+            <div class="text-xs font-bold text-slate-800">4. 异常流与状态机设计 (Fallback & Circuit Breaker)</div>
+            <span class="text-[10px] text-slate-400 font-mono">防御性设计</span>
+          </div>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            针对零售现场的高频异常情况，设计了 3 种优雅降级与防御策略：
+          </p>
+          
+          <div class="space-y-2 text-xs">
+            <div class="p-2.5 rounded bg-slate-50 border border-slate-200/80">
+              <div class="font-bold text-slate-800 text-[11px]">异常 1：缺货断言熔断 (Circuit Breaker)</div>
+              <div class="text-slate-600 text-[11px] mt-0.5">
+                当申请出库量 > 店铺现有在库量时，系统拒绝扣减库存，状态标记为 <code class="bg-red-50 text-red-700 px-1 rounded">STOCK_DEFICIT_WARNING</code>，并自动生成调拨建议。
+              </div>
+            </div>
+
+            <div class="p-2.5 rounded bg-slate-50 border border-slate-200/80">
+              <div class="font-bold text-slate-800 text-[11px]">异常 2：配件模糊智能补全 (Context Association)</div>
+              <div class="text-slate-600 text-[11px] mt-0.5">
+                销售报单若仅输入“送了个自拍杆”，系统结合主商品型号（如 X4 全景机）自动补全默认匹配的“114cm 隐形自拍杆”。
+              </div>
+            </div>
+
+            <div class="p-2.5 rounded bg-slate-50 border border-slate-200/80">
+              <div class="font-bold text-slate-800 text-[11px]">异常 3：网络超时或服务故障兜底 (Offline Fallback)</div>
+              <div class="text-slate-600 text-[11px] mt-0.5">
+                大模型解析超过 3 秒未响应时，前端自动降级为“快速表单模式”，保障高峰期收银与对账业务连续性不受影响。
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 底部页脚 -->
+  <footer class="border-t border-slate-200 py-6 text-center text-xs text-slate-400">
+    <div class="max-w-5xl mx-auto px-4">
+      <div>张晨宇 | 消费电子零售实践与进销存辅助系统作品集 · 联系电话：193-5083-6683 · 邮箱：jjke5982@gmail.com</div>
+    </div>
+  </footer>
+
+  <!-- 交互模拟器 JS 逻辑 -->
+  <script>
+    // 影石官网 6 大核心在售品及配件真实数据 (含价格、SN序列号前缀、店铺分布)
+    let inventory = [
+      { id: 1, sku: 'Insta360 X4 (8K旗舰全景相机)', sn: 'INX4-24-8891', store: 'A店', price: 3499, qty: 5, safety: 2 },
+      { id: 2, sku: 'Insta360 X4 (8K旗舰全景相机)', sn: 'INX4-24-8892', store: 'B店', price: 3499, qty: 1, safety: 2 },
+      { id: 3, sku: 'Insta360 Ace Pro 2 (双AI芯片运动相机)', sn: 'INAP2-25-331', store: 'A店', price: 2698, qty: 4, safety: 2 },
+      { id: 4, sku: 'Insta360 Ace Pro 2 (双AI芯片运动相机)', sn: 'INAP2-25-332', store: 'B店', price: 2698, qty: 2, safety: 2 },
+      { id: 5, sku: 'Insta360 GO 3S (4K拇指相机)', sn: 'INGO3S-24-55', store: 'A店', price: 2498, qty: 3, safety: 2 },
+      { id: 6, sku: 'Insta360 Flow Pro (AI手机云台)', sn: 'INFP-24-662', store: 'A店', price: 899, qty: 2, safety: 2 },
+      { id: 7, sku: '114cm 隐形自拍杆 (官方核心配件)', sn: 'ACC-SP-114', store: 'A店', price: 118, qty: 10, safety: 3 },
+      { id: 8, sku: 'X4 闪传背夹 (高速存储配件)', sn: 'ACC-QR-204', store: 'A店', price: 299, qty: 6, safety: 2 }
+    ];
+
+    function renderInventory() {
+      const tbody = document.getElementById('inventoryTable');
+      tbody.innerHTML = '';
+      inventory.forEach(item => {
+        const isLow = item.qty <= item.safety;
+        const statusBadge = isLow 
+          ? `<span class="bg-amber-50 text-amber-700 border border-amber-200 px-1.5 py-0.5 rounded text-[10px]">库存偏低 (${item.qty}台)</span>`
+          : `<span class="bg-emerald-50 text-emerald-700 border border-emerald-200 px-1.5 py-0.5 rounded text-[10px]">正常</span>`;
+
+        tbody.innerHTML += `
+          <tr class="hover:bg-slate-50 transition">
+            <td class="px-2.5 py-1.5 text-slate-800 font-medium">${item.sku}</td>
+            <td class="px-2 py-1.5 text-slate-500 font-mono text-[10px]">${item.sn}</td>
+            <td class="px-2 py-1.5 text-slate-600">${item.store}</td>
+            <td class="px-2 py-1.5 text-right font-medium text-slate-700">¥${item.price}</td>
+            <td class="px-2.5 py-1.5 text-right font-bold ${isLow ? 'text-amber-600' : 'text-slate-800'}">${item.qty}</td>
+            <td class="px-2.5 py-1.5">${statusBadge}</td>
+          </tr>
+        `;
+      });
+    }
+
+    function resetInventory() {
+      inventory = [
+        { id: 1, sku: 'Insta360 X4 (8K旗舰全景相机)', sn: 'INX4-24-8891', store: 'A店', price: 3499, qty: 5, safety: 2 },
+        { id: 2, sku: 'Insta360 X4 (8K旗舰全景相机)', sn: 'INX4-24-8892', store: 'B店', price: 3499, qty: 1, safety: 2 },
+        { id: 3, sku: 'Insta360 Ace Pro 2 (双AI芯片运动相机)', sn: 'INAP2-25-331', store: 'A店', price: 2698, qty: 4, safety: 2 },
+        { id: 4, sku: 'Insta360 Ace Pro 2 (双AI芯片运动相机)', sn: 'INAP2-25-332', store: 'B店', price: 2698, qty: 2, safety: 2 },
+        { id: 5, sku: 'Insta360 GO 3S (4K拇指相机)', sn: 'INGO3S-24-55', store: 'A店', price: 2498, qty: 3, safety: 2 },
+        { id: 6, sku: 'Insta360 Flow Pro (AI手机云台)', sn: 'INFP-24-662', store: 'A店', price: 899, qty: 2, safety: 2 },
+        { id: 7, sku: '114cm 隐形自拍杆 (官方核心配件)', sn: 'ACC-SP-114', store: 'A店', price: 118, qty: 10, safety: 3 },
+        { id: 8, sku: 'X4 闪传背夹 (高速存储配件)', sn: 'ACC-QR-204', store: 'A店', price: 299, qty: 6, safety: 2 }
+      ];
+      renderInventory();
+      document.getElementById('thinkingLog').innerHTML = '<div class="text-slate-400">> 库存已重置为初始状态。</div>';
+      document.getElementById('outputContainer').innerHTML = '点击左侧按钮，查看包含实收价格与责任员工的交易凭据';
+      document.getElementById('badgeStatus').classList.add('hidden');
+    }
+
+    function fillPreset(index) {
+      const input = document.getElementById('salesInput');
+      if (index === 1) {
+        input.value = "【员工甲/A店】：出货2台X4，给老客户优惠每台实收3399元，送1个114cm自拍杆；另外调拨1台Ace Pro 2去B店。";
+      } else if (index === 2) {
+        input.value = "【员工乙/B店】：按原价2698元出了一台爱斯普罗2，送一个自拍杆；让A店调一台拇指相机过来。";
+      } else if (index === 3) {
+        input.value = "【员工丙/A店】：收到总仓配货到店：5台Flow Pro云台，已核验外包装封签，办理进货入库。";
+      }
+    }
+
+    function addLog(text, color = "text-slate-600") {
+      const log = document.getElementById('thinkingLog');
+      log.innerHTML += `<div class="${color}">• ${text}</div>`;
+      log.scrollTop = log.scrollHeight;
+    }
+
+    function processOrder() {
+      const input = document.getElementById('salesInput').value.trim();
+      const btn = document.getElementById('btnProcess');
+      const spinner = document.getElementById('thinkingSpinner');
+      const timeLabel = document.getElementById('executionTime');
+      const badge = document.getElementById('badgeStatus');
+
+      if (!input) return alert('请输入报单口语文本');
+
+      btn.disabled = true;
+      btn.classList.add('opacity-60');
+      spinner.classList.remove('hidden');
+      badge.classList.add('hidden');
+      
+      const startTime = performance.now();
+      document.getElementById('thinkingLog').innerHTML = '';
+      addLog("收到输入文本，开始提取责任员工与成交价格...", "text-slate-700 font-semibold");
+
+      let staffName = "员工甲";
+      if (input.includes("员工乙")) staffName = "员工乙";
+      else if (input.includes("员工丙")) staffName = "员工丙";
+      else if (input.includes("员工丁")) staffName = "员工丁";
+
+      setTimeout(() => {
+        addLog(`成功识别责任人：【${staffName}】，正在解析实收金额与优惠...`, "text-orange-600");
+      }, 250);
+
+      setTimeout(() => {
+        // 场景 3：进货入库
+        if (input.includes("进货入库") || input.includes("Flow Pro")) {
+          inventory[5].qty += 5; // Flow Pro +5
+          renderInventory();
+
+          btn.disabled = false;
+          btn.classList.remove('opacity-60');
+          spinner.classList.add('hidden');
+          timeLabel.innerText = `处理耗时: ${(performance.now() - startTime).toFixed(0)}ms`;
+
+          badge.className = "text-[10px] px-1.5 py-0.5 rounded font-mono bg-blue-50 text-blue-700 border border-blue-200";
+          badge.innerText = "进货入库完成";
+          badge.classList.remove('hidden');
+
+          document.getElementById('outputContainer').innerHTML = `
+            <div class="w-full bg-blue-50/50 border border-blue-200 p-2.5 rounded text-left space-y-1 text-xs">
+              <div class="flex justify-between items-center text-blue-800 font-bold border-b border-blue-200/60 pb-1">
+                <span>📦 进货入库单已生成并记账 (A店)</span>
+                <span class="text-[11px] bg-blue-100 text-blue-800 px-1.5 py-0.5 rounded">经手人：${staffName}</span>
+              </div>
+              <div class="flex justify-between text-slate-700 text-[11px] pt-0.5">
+                <span>入库品名：Insta360 Flow Pro (AI手机云台)</span>
+                <span class="font-bold text-blue-700">+5 台 (总值: ¥4,495)</span>
+              </div>
+              <div class="text-slate-500 text-[10px]">核验员：${staffName} · 序列号段：INFP-24-66201 ~ INFP-24-66205</div>
+            </div>
+          `;
+          return;
+        }
+
+        let transPrice = 3499;
+        let discount = 0;
+        if (input.includes("3399")) {
+          transPrice = 3399;
+          discount = 100;
+          addLog("精准提取实收成交单价：¥3,399 (官方标价 ¥3,499，优惠 ¥100/台)", "text-emerald-700 font-semibold");
+        } else if (input.includes("2698")) {
+          transPrice = 2698;
+          addLog("登记按官方原价成交：¥2,698", "text-slate-600");
+        }
+
+        if (input.includes("爱斯普罗2")) {
+          addLog("字典匹配纠偏：'爱斯普罗2' 对应为 [Insta360 Ace Pro 2] (¥2698)", "text-orange-600");
+        }
+        if (input.includes("拇指相机")) {
+          addLog("字典匹配别称：'拇指相机' 对应为 [Insta360 GO 3S] (¥2498)", "text-orange-600");
+        }
+
+        addLog(`绑定 ${staffName} 销售额提成账户，更新在库记录...`, "text-emerald-600");
+
+        // 扣减
+        if (input.includes("X4") && input.includes("出货2台")) {
+          inventory[0].qty -= 2; // A店 X4 -2
+          inventory[2].qty -= 1; // A店 Ace Pro 2 -1 (调拨)
+          inventory[3].qty += 1; // B店 Ace Pro 2 +1 (调入)
+          inventory[6].qty -= 1; // 自拍杆 -1
+        } else if (input.includes("B店出了一台")) {
+          inventory[3].qty -= 1; // B店 Ace Pro 2 -1
+          inventory[6].qty -= 1; // 自拍杆 -1
+          inventory[4].qty -= 1; // A店 GO 3S 调拨 -1
+        }
+
+        renderInventory();
+
+        btn.disabled = false;
+        btn.classList.remove('opacity-60');
+        spinner.classList.add('hidden');
+        timeLabel.innerText = `处理耗时: ${(performance.now() - startTime).toFixed(0)}ms`;
+
+        badge.className = "text-[10px] px-1.5 py-0.5 rounded font-mono bg-emerald-50 text-emerald-700 border border-emerald-200";
+        badge.innerText = "已自动对账记录";
+        badge.classList.remove('hidden');
+
+        document.getElementById('outputContainer').innerHTML = `
+          <div class="w-full bg-slate-50 border border-slate-200 p-2.5 rounded text-left space-y-1.5 text-xs">
+            <div class="flex items-center justify-between text-slate-500 text-[11px] border-b border-slate-200 pb-1">
+              <span>单号: REC-${Math.floor(Math.random()*9000+1000)}</span>
+              <span class="text-orange-600 font-bold bg-orange-50 px-1.5 py-0.5 rounded border border-orange-200">经办销售：${staffName}</span>
+            </div>
+            <div class="space-y-1 text-[11px]">
+              <div class="flex justify-between text-slate-700">
+                <span>出库销售：Insta360 X4 (实收价: ¥${transPrice}/台)</span>
+                <span class="font-bold text-slate-900">实收 ¥${transPrice * 2}</span>
+              </div>
+              ${discount > 0 ? `<div class="text-[10px] text-orange-600">* 优惠登记：官方标价 ¥3,499，单台优惠 -¥${discount}，总让利 -¥${discount * 2}</div>` : ''}
+              <div class="flex justify-between text-slate-700">
+                <span>附赠配件：114cm 隐形自拍杆 (¥118)</span>
+                <span class="font-bold text-slate-900">-1 个 (赠品)</span>
+              </div>
+              <div class="flex justify-between text-slate-700">
+                <span>跨店平调：A店 ➔ B店 (Ace Pro 2)</span>
+                <span class="font-bold text-orange-600">调拨 1 台</span>
+              </div>
+            </div>
+            <div class="text-[10px] text-slate-400 border-t border-slate-200/80 pt-1">
+              * 实收成交金额 ¥${transPrice * 2} 已自动计入 [${staffName}] 个人当月累计业绩中。
+            </div>
+          </div>
+        `;
+      }, 600);
+    }
+
+    // 模态弹窗控制
+    function generateDailySummary() {
+      document.getElementById('dailyModal').classList.remove('hidden');
+    }
+    function closeDailyModal() {
+      document.getElementById('dailyModal').classList.add('hidden');
+    }
+    function generateMonthlySummary() {
+      document.getElementById('monthlyModal').classList.remove('hidden');
+    }
+    function closeMonthlyModal() {
+      document.getElementById('monthlyModal').classList.add('hidden');
+    }
+
+    // 初始化渲染
+    renderInventory();
+  </script>
+</body>
+</html>
